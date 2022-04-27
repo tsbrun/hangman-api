@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+levels = Level.create([
+    { word: "props", hint: "data passed from one component to another" },
+    { word: "component", hint: "returns a React element" },
+    { word: "bootstrap", hint: "css framework" }
+])
