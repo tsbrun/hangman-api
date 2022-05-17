@@ -1,4 +1,5 @@
 class LevelsController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def index 
     @levels = Level.all 
@@ -42,4 +43,10 @@ class LevelsController < ApplicationController
         }
     end
   end
+
+#   private 
+
+#   def levelParams
+#     params.require(:)
+#   end
 end
